@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_movie_genre1"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/rounded_button1"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Fantasy"
+            android:textAllCaps="false" />
+
+        <View
+            android:id="@+id/v_view1"
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@id/tv_movie_genre1"
+            android:layout_toRightOf="@id/tv_movie_genre1"
+            android:background="#bdbdbd"></View>
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_movie_genre2"-->
+            <!--android:layout_width="140dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_marginLeft="8dp"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:layout_toRightOf="@id/tv_movie_genre1"-->
+            <!--android:background="@drawable/rounded_button1"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="2dp"-->
+            <!--android:text="Science Fiction"-->
+            <!--android:textAllCaps="false" />-->
+
+        <!--<View-->
+            <!--android:id="@+id/v_view2"-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_alignTop="@id/tv_movie_genre2"-->
+            <!--android:layout_toRightOf="@id/tv_movie_genre2"-->
+            <!--android:background="#bdbdbd"></View>-->
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_movie_genre3"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_alignTop="@id/tv_movie_genre2"-->
+            <!--android:layout_marginLeft="8dp"-->
+            <!--android:layout_toRightOf="@id/tv_movie_genre2"-->
+            <!--android:background="@drawable/rounded_button1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="Adventure" />-->
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

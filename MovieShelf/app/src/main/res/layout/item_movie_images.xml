@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hha.heinhtetaung.movieshelf.viewitems.ImagesMovieViewItem
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="16dp"
+    android:background="#000">
+
+
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="180dp"
+        android:scrollbars="horizontal"
+        android:src="@drawable/img_justice_movie_trailer_resize" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_play_circle_outline_white_24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:text="Re-Release Trailer"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        style="@style/color_text_border"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="4dp"
+        android:text="Trailer"
+        android:textSize="14sp"
+        style="@style/color_text_border"/>
+
+</com.hha.heinhtetaung.movieshelf.viewitems.ImagesMovieViewItem>

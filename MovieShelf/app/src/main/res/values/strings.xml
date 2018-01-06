@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Movie Shelf</string>
+    <string name="action_settings">Settings</string>
+    <string name="movie_review1">
+Initial release: November 16, 2017 (Denmark)
+Director: Zack Snyder
+Box office: 567.4 million USD
+Budget: 300 million USD
+Did you know: "Justice League" is the second-most-expensive film ever made. wikipedia.org</string>
+    <string name="movie_review2">
+        Fueled by his restored faith in humanity and inspired by Superman\'s selfless act, Bruce Wayne enlists newfound ally Diana Prince to face an even greater threat. Together, Batman and Wonder Woman work quickly to recruit a team to stand against this newly awakened enemy. Despite the formation of an unprecedented league of heroes -- Batman, Wonder Woman, Aquaman, Cyborg and the Flash -- it may be too late to save the planet from an assault of catastrophic proportions.
+      Fueled by his restored faith in humanity and inspired by Superman\'s selfless act, Bruce Wayne enlists newfound ally Diana Prince to face an even greater threat. Together, Batman and Wonder Woman work quickly to recruit a team to stand against this newly awakened enemy. Despite the formation of an unprecedented league of heroes -- Batman, Wonder Woman, Aquaman, Cyborg and the Flash -- it may be too late to save the planet from an assault of catastrophic proportions.Fueled by his restored faith in humanity and inspired by Superman\'s selfless act, Bruce Wayne enlists newfound ally Diana Prince to face an even greater threat. Together, Batman and Wonder Woman work quickly to recruit a team to stand against this newly awakened enemy. Despite the formation of an unprecedented league of heroes -- Batman, Wonder Woman, Aquaman, Cyborg and the Flash -- it may be too late to save the planet from an assault of catastrophic proportions.
+Fueled by his restored faith in humanity and inspired by Superman\'s selfless act, Bruce Wayne enlists newfound ally Diana Prince to face an even greater threat. Together, Batman and Wonder Woman work quickly to recruit a team to stand against this newly awakened enemy. Despite the formation of an unprecedented league of heroes -- Batman, Wonder Woman, Aquaman, Cyborg and the Flash -- it may be too late to save the planet from an assault of catastrophic proportions.
+
+    </string>
+    <string name="movie_short_review"><u>Reviews</u></string>
+</resources>

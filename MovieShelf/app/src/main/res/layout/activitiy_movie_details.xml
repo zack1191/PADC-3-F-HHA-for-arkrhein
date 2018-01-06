@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#01579b"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/ab_movie"
+        style="@style/AppTheme.AppBarOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:alpha="5"
+            android:background="@drawable/img_dummy_justice_league_resize"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll">
+
+            <!--<android.support.v7.widget.Toolbar-->
+            <!--style="@style/AppTheme.PopupOverlay"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?attr/actionBarSize"></android.support.v7.widget.Toolbar>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_movie1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_justice_resize2" />
+
+                <TextView
+                    android:id="@+id/tv_movie_title"
+                    style="@style/color_text_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/iv_movie1"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@id/iv_movie1"
+                    android:text="Justice League"
+                    android:textSize="28dp" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/tv_movie_title"
+                    android:layout_below="@id/tv_movie_title"
+                    android:layout_marginTop="20sp">
+
+                    <TextView
+                        android:id="@+id/tv_movie_brief"
+                        style="@style/color_text_border"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingMultiplier="1.1"
+                        android:text="@string/movie_review1"
+                        android:textSize="14sp" />
+                </ScrollView>
+
+
+                <RatingBar
+                    android:id="@+id/rb_movie_rating"
+                    style="@style/RattingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_movie1"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+                    android:numStars="7"
+                    android:rating="7" />
+
+                <TextView
+                    android:id="@+id/tv_released_date"
+                    style="@style/color_text_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/rb_movie_rating"
+                    android:layout_below="@id/rb_movie_rating"
+                    android:layout_marginBottom="4dp"
+                    android:text="Released: November 16, 2017"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_rating_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/iv_movie1"
+                    android:layout_alignTop="@id/iv_movie1"
+                    android:background="@drawable/ic_favorite_red_24dp"
+                    android:padding="8dp"
+                    android:text="8.5"
+                    android:textColor="#fff" />
+
+                <ImageView
+                    android:id="@+id/iv_crop_movie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/iv_movie1"
+                    android:layout_alignRight="@id/iv_movie1"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/ic_crop_free_black_24dp" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/tv_movie_review"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_marginTop="356dp"-->
+                <!--android:lineSpacingMultiplier="1.1"-->
+                <!--android:text="@string/movie_review2"-->
+                <!--android:textSize="14sp" />-->
+            </RelativeLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_add_white_24dp"
+        app:fabSize="normal"
+        app:layout_anchor="@id/ab_movie"
+        app:layout_anchorGravity="right|bottom" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffeb3b"
+                android:padding="8dp"
+                android:text=" Justice League"
+                android:textColor="@color/primary_text"
+                android:textSize="24sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tv_title"
+                android:fitsSystemWindows="true">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_movie_genre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"></android.support.v7.widget.RecyclerView>
+
+                <!--<TextView-->
+                <!--android:id="@+id/tv_movie_genre1"-->
+                <!--android:layout_width="80dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_marginLeft="16dp"-->
+                <!--android:layout_marginRight="8dp"-->
+                <!--android:layout_marginTop="16dp"-->
+                <!--android:background="@drawable/rounded_button1"-->
+                <!--android:gravity="center"-->
+                <!--android:padding="2dp"-->
+                <!--android:text="Fantasy"-->
+                <!--android:textAllCaps="false" />-->
+
+                <!--<View-->
+                <!--android:id="@+id/v_view1"-->
+                <!--android:layout_width="1dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_alignTop="@id/tv_movie_genre1"-->
+                <!--android:layout_toRightOf="@id/tv_movie_genre1"-->
+                <!--android:background="#bdbdbd"></View>-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/tv_movie_genre2"-->
+                <!--android:layout_width="140dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:layout_marginRight="8dp"-->
+                <!--android:layout_marginTop="16dp"-->
+                <!--android:layout_toRightOf="@id/tv_movie_genre1"-->
+                <!--android:background="@drawable/rounded_button1"-->
+                <!--android:gravity="center"-->
+                <!--android:padding="2dp"-->
+                <!--android:text="Science Fiction"-->
+                <!--android:textAllCaps="false" />-->
+
+                <!--<View-->
+                <!--android:id="@+id/v_view2"-->
+                <!--android:layout_width="1dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_alignTop="@id/tv_movie_genre2"-->
+                <!--android:layout_toRightOf="@id/tv_movie_genre2"-->
+                <!--android:background="#bdbdbd"></View>-->
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/tv_movie_genre3"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_alignTop="@id/tv_movie_genre2"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:layout_toRightOf="@id/tv_movie_genre2"-->
+                <!--android:background="@drawable/rounded_button1"-->
+                <!--android:gravity="center"-->
+                <!--android:text="Adventure" />-->
+
+                <TextView
+                    android:id="@+id/tv_long_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rv_movie_genre"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/border"
+                    android:padding="4dp"
+                    android:text="2 hours"
+                    android:textAllCaps="false"
+                    android:textColor="#fff" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_movie_trailer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_long_time"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:fitsSystemWindows="true"
+                    android:scrollbars="horizontal">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/tv_movie_short_review"
+                    style="@style/color_text_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rv_movie_trailer"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/movie_short_review"
+                    android:textSize="20sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_movie_review"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_movie_short_review"
+                    android:layout_marginBottom="16dp">
+
+                </android.support.v7.widget.RecyclerView>
+                <!--<TextView-->
+                <!--android:id="@+id/tv_movie_review2"-->
+                <!--style="@style/color_text_border"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/tv_movie_short_review"-->
+                <!--android:layout_marginBottom="16dp"-->
+                <!--android:layout_marginLeft="16dp"-->
+                <!--android:layout_marginRight="16dp"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:lineSpacingMultiplier="1.1"-->
+                <!--android:text="@string/movie_review2"-->
+                <!--android:textSize="14sp" />-->
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

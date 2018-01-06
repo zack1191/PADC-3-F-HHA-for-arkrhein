@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_item_movies"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_justice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="@drawable/ripple_red">
+
+        <ImageView
+            android:id="@+id/iv_justice"
+            android:layout_width="150dp"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_justice_resize2" />
+
+        <TextView
+            android:id="@+id/tv_justice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/iv_justice"
+            android:text="Justice League"
+            android:textColor="@color/primary_text"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_justice"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/iv_justice"
+            android:text="(Action,Science Fiction,Adventure)"
+            android:textColor="@color/primary_text"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_type"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/iv_justice"
+            android:text="Current Popularity"
+            android:textColor="@color/primary_text"
+            android:textSize="16dp" />
+
+        <RatingBar
+            android:id="@+id/rb_ratting"
+            style="@style/RattingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_current"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/iv_justice"
+            android:rating="5" />
+
+
+        <!---->
+        <!--<ImageView-->
+        <!--android:id="@+id/iv_star"-->
+        <!--android:layout_below="@id/tv_current"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:tint="@color/primary"-->
+        <!--android:layout_toRightOf="@id/iv_justice"-->
+        <!--android:src="@drawable/ic_star_black_24dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+        <!--<ImageView-->
+        <!--android:id="@+id/iv_star2"-->
+        <!--android:layout_below="@id/tv_current"-->
+        <!--android:tint="@color/primary"-->
+        <!--android:layout_toRightOf="@id/iv_star"-->
+        <!--android:src="@drawable/ic_star_black_24dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+        <!--<ImageView-->
+        <!--android:id="@+id/iv_star3"-->
+        <!--android:layout_below="@id/tv_current"-->
+        <!--android:tint="@color/primary"-->
+        <!--android:layout_toRightOf="@id/iv_star2"-->
+        <!--android:src="@drawable/ic_star_black_24dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+        <!--<ImageView-->
+        <!--android:id="@+id/iv_star4"-->
+        <!--android:layout_below="@id/tv_current"-->
+        <!--android:tint="@color/primary"-->
+        <!--android:layout_toRightOf="@id/iv_star3"-->
+        <!--android:src="@drawable/ic_star_black_24dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+        <!--<ImageView-->
+        <!--android:id="@+id/iv_star5"-->
+        <!--android:layout_below="@id/tv_current"-->
+        <!--android:tint="@color/primary"-->
+        <!--android:layout_toRightOf="@id/iv_star4"-->
+        <!--android:src="@drawable/ic_star_black_24dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/iv_star7"-->
+        <!--android:layout_below="@id/tv_current"-->
+        <!--android:tint="@color/primary"-->
+        <!--android:layout_toRightOf="@id/iv_star5"-->
+        <!--android:src="@drawable/ic_star_half_black_24dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--/>-->
+        <ImageView
+            android:id="@+id/iv_crop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_justice"
+            android:layout_alignRight="@id/iv_justice"
+            android:src="@drawable/ic_crop_free_black_24dp" />
+
+        <Button
+            android:id="@+id/btn_review_justice"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@id/iv_justice"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/primary"
+            android:foreground="@drawable/ripple_white"
+            android:padding="2dp"
+            android:text="Movie Overview"
+            android:textAllCaps="false"
+            android:textColor="@color/icons"
+            android:textSize="14sp" />
+
+        <FrameLayout
+            android:id="@+id/fl_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_favorite"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/ic_favorite_red_24dp" />
+
+            <TextView
+                android:id="@+id/tv_rating_points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="7.2"
+                android:textColor="@color/icons"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+        </FrameLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+
+    <!--<android.support.v7.widget.CardView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_margin="8dp"--><!--app:cardElevation="8dp"--><!--android:layout_weight="1">-->
+
+    <!--<RelativeLayout--><!--android:id="@+id/rl_thor"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginTop="8dp">-->
+
+    <!--<TextView--><!--android:id="@+id/tv_text1"--><!--android:text="Thor Ragnarok"--><!--android:textSize="16dp"--><!--android:layout_toRightOf="@id/iv_thor"--><!--android:layout_marginLeft="8dp"--><!--android:textColor="@color/primary_text"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content" />--><!--<TextView--><!--android:id="@+id/tv_type2"--><!--android:text="(Adventure,Fantasy,Science Fiction)"--><!--android:textSize="16dp"--><!--android:textStyle="bold"--><!--android:layout_below="@id/tv_text1"--><!--android:layout_toRightOf="@id/iv_thor"--><!--android:layout_marginLeft="8dp"--><!--android:textColor="@color/primary_text"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content" />--><!--<TextView--><!--android:id="@+id/tv_current1"--><!--android:text="Current Popularity"--><!--android:textSize="16dp"--><!--android:layout_below="@id/tv_type2"--><!--android:layout_toRightOf="@id/iv_thor"--><!--android:layout_marginLeft="8dp"--><!--android:textColor="@color/primary_text"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content" />--><!--<ImageView--><!--android:id="@+id/iv_thor"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:src="@drawable/img_thor_resize" />--><!--<ImageView--><!--android:id="@+id/iv_s"--><!--android:layout_below="@id/tv_current1"--><!--android:layout_marginLeft="8dp"--><!--android:tint="@color/primary"--><!--android:layout_toRightOf="@id/iv_thor"--><!--android:src="@drawable/ic_star_black_24dp"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content" />--><!--<ImageView--><!--android:id="@+id/iv_s2"--><!--android:layout_below="@id/tv_current1"--><!--android:tint="@color/primary"--><!--android:layout_toRightOf="@id/iv_s"--><!--android:src="@drawable/ic_star_black_24dp"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content" />--><!--<ImageView--><!--android:id="@+id/iv_s3"--><!--android:layout_below="@id/tv_current1"--><!--android:tint="@color/primary"--><!--android:layout_toRightOf="@id/iv_s2"--><!--android:src="@drawable/ic_star_black_24dp"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content" />--><!--<ImageView--><!--android:id="@+id/iv_s4"--><!--android:layout_below="@id/tv_current1"--><!--android:tint="@color/primary"--><!--android:layout_toRightOf="@id/iv_s3"--><!--android:src="@drawable/ic_star_black_24dp"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content" />--><!--<ImageView--><!--android:id="@+id/iv_s5"--><!--android:layout_below="@id/tv_current1"--><!--android:tint="@color/primary"--><!--android:layout_toRightOf="@id/iv_s4"--><!--android:src="@drawable/ic_star_black_24dp"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content" />--><!--<ImageView--><!--android:id="@+id/iv_s6"--><!--android:layout_below="@id/tv_current1"--><!--android:tint="@color/primary"--><!--android:layout_toRightOf="@id/iv_s5"--><!--android:src="@drawable/ic_star_black_24dp"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content" />--><!--<Button--><!--android:id="@+id/btn_review_thor"--><!--android:layout_width="140dp"--><!--android:padding="2dp"--><!--android:layout_height="30dp"--><!--android:layout_alignParentRight="true"--><!--android:text="Movie Overview"--><!--android:textAllCaps="false"--><!--android:foreground="@drawable/ripple_white"--><!--android:textSize="14sp"--><!--android:background="@color/primary"--><!--android:textColor="@color/icons"--><!--android:layout_marginBottom="4dp"--><!--android:layout_alignBottom="@id/iv_thor"--><!--android:layout_marginRight="4dp"/>--><!--<ImageView--><!--android:id="@+id/iv_s7"--><!--android:layout_below="@id/tv_current1"--><!--android:tint="@color/primary"--><!--android:layout_toRightOf="@id/iv_s6"--><!--android:src="@drawable/ic_star_half_black_24dp"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"></ImageView>-->
+
+    <!--<ImageView--><!--android:id="@+id/iv_favorite1"--><!--android:layout_width="35dp"--><!--android:layout_height="35dp"--><!--android:layout_marginTop="8dp"--><!--android:scaleType="centerCrop"--><!--android:src="@drawable/ic_favorite_red_24dp"--><!--/>-->
+
+    <!--<TextView--><!--android:id="@+id/tv_rating_points1"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignBottom="@+id/iv_favorite1"--><!--android:layout_alignLeft="@+id/iv_favorite1"--><!--android:layout_alignRight="@+id/iv_favorite1"--><!--android:layout_alignTop="@+id/iv_favorite1"--><!--android:layout_margin="1dp"--><!--android:gravity="center"--><!--android:text="8.9"--><!--android:textColor="@color/icons"--><!--android:textSize="14sp"--><!--android:textStyle="italic" />--><!--</RelativeLayout>--><!--</android.support.v7.widget.CardView>-->
+
+    <!--<android.support.v7.widget.CardView--><!--android:layout_weight="1"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_margin="8dp"--><!--app:cardElevation="8dp">-->
+
+    <!--<RelativeLayout--><!--android:id="@+id/rl_it"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content">-->
+
+    <!--<TextView--><!--android:id="@+id/tv_text2"--><!--android:text="It"--><!--android:layout_toRightOf="@id/iv_it"--><!--android:layout_marginLeft="8dp"--><!--android:textSize="16dp"--><!--android:textColor="@color/primary_text"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content" />-->
+
+    <!--<TextView--><!--android:id="@+id/tv_type3"--><!--android:layout_toRightOf="@id/iv_it"--><!--android:layout_below="@id/tv_text2"--><!--android:layout_marginLeft="8dp"--><!--android:textSize="16dp"--><!--android:textStyle="bold"--><!--android:textColor="@color/primary_text"--><!--android:text="(Drama,Horror,Thriller)"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content" />-->
+
+    <!--<TextView--><!--android:id="@+id/tv_current2"--><!--android:layout_toRightOf="@id/iv_it"--><!--android:layout_below="@id/tv_type3"--><!--android:layout_marginLeft="8dp"--><!--android:textSize="16dp"--><!--android:layout_marginTop="4dp"--><!--android:textColor="@color/primary_text"--><!--android:text="Current Popularity"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content" />-->
+
+    <!--<ImageView--><!--android:id="@+id/iv_st"--><!--android:layout_below="@id/tv_current2"--><!--android:layout_marginLeft="8dp"--><!--android:tint="@color/primary"--><!--android:layout_toRightOf="@id/iv_it"--><!--android:src="@drawable/ic_star_black_24dp"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content" />--><!--<ImageView--><!--android:id="@+id/iv_st2"--><!--android:layout_below="@id/tv_current2"--><!--android:tint="@color/primary"--><!--android:layout_toRightOf="@id/iv_st"--><!--android:src="@drawable/ic_star_black_24dp"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content" />--><!--<ImageView--><!--android:id="@+id/iv_st3"--><!--android:layout_below="@id/tv_current2"--><!--android:tint="@color/primary"--><!--android:layout_toRightOf="@id/iv_st2"--><!--android:src="@drawable/ic_star_black_24dp"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content" />--><!--<ImageView--><!--android:id="@+id/iv_st4"--><!--android:layout_below="@id/tv_current2"--><!--android:tint="@color/primary"--><!--android:layout_toRightOf="@id/iv_st3"--><!--android:src="@drawable/ic_star_black_24dp"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content" />--><!--<ImageView--><!--android:id="@+id/iv_st5"--><!--android:layout_below="@id/tv_current2"--><!--android:tint="@color/primary"--><!--android:layout_toRightOf="@id/iv_st4"--><!--android:src="@drawable/ic_star_black_24dp"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content" />--><!--<ImageView--><!--android:id="@+id/iv_it"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:src="@drawable/img_it_resize" />--><!--<Button--><!--android:id="@+id/btn_review_it"--><!--android:layout_width="140dp"--><!--android:padding="2dp"--><!--android:layout_height="30dp"--><!--android:layout_alignParentRight="true"--><!--android:text="Movie Overview"--><!--android:textAllCaps="false"--><!--android:textSize="14sp"--><!--android:foreground="@drawable/ripple_white"--><!--android:background="@color/primary"--><!--android:textColor="@color/icons"--><!--android:layout_marginBottom="4dp"--><!--android:layout_alignBottom="@id/iv_it"--><!--android:layout_marginRight="4dp"/>-->
+
+    <!--<ImageView--><!--android:id="@+id/iv_favorite2"--><!--android:layout_width="35dp"--><!--android:layout_height="35dp"--><!--android:layout_marginTop="8dp"--><!--android:scaleType="centerCrop"--><!--android:src="@drawable/ic_favorite_red_24dp"--><!--/>-->
+
+    <!--<TextView--><!--android:id="@+id/tv_rating_points2"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignBottom="@+id/iv_favorite2"--><!--android:layout_alignLeft="@+id/iv_favorite2"--><!--android:layout_alignRight="@+id/iv_favorite2"--><!--android:layout_alignTop="@+id/iv_favorite2"--><!--android:layout_margin="1dp"--><!--android:gravity="center"--><!--android:text="7.0"--><!--android:textColor="@color/icons"--><!--android:textSize="14sp"--><!--android:textStyle="italic" />--><!--</RelativeLayout>--><!--</android.support.v7.widget.CardView>-->
+
